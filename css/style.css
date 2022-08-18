@@ -13,28 +13,16 @@ p {
      color: #525252;
 }
 
-h1 {
-     margin: 20px 0px;
-     font-style: normal;
-     font-weight: bold;
-     font-size: 20px;
-     line-height: 30px;
-}
-
-h3 {
-     font-size: 16px;
-}
-
-h4 {
-     line-height: 27px;
-     font-size: 18px;
-     margin: 15px 0px;
-}
-
 h5 {
      margin: 20px 0px;
-     font-size: 24px;
+     line-height: 30px;
+     font-weight: 500;
+}
+
+h6 {
+     margin: 15px 0px;
      font-weight: 400;
+     line-height: 27px;
 }
 
 a,
@@ -85,7 +73,7 @@ a:hover {
 }
 
 #Jumbotron {
-     margin-top: 80px;
+     margin-top: 100px;
 }
 
 
