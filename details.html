@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Detail Page </title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/xzoom.css">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <div class="container">
+
+          <nav class="navbar fixed-top navbar-expand-sm bg-light">
+               <div class="container pic-profile">
+                    <a class="navbar-brand" href="">
+                         <img src="/img/logo.svg" alt="" width="30" height="24">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                         <ul class="navbar-nav ms-auto ">
+                              <li class="nav-item ">
+                                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">Categories</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">Rewards</a>
+                              </li>
+                              <li class="nav-item user">
+                                   <a href="">
+                                        <img src="img/User.png" alt="" srcset="">
+                                        Hi, Iqbal
+                                   </a>
+                              </li>
+                              <li class="nav-item">
+                                   <a href="">
+                                        <img src="img/shop.png" alt="">
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+
+          <section id="sitemap">
+               <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                         <li class="breadcrumb-item"><a href="#">Home</a></li>
+                         <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+                    </ol>
+               </nav>
+          </section>
+
+          <section id="gallery">
+               <div class="row gallery">
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-md-start text-center">
+                         <img class="xzoom" src="img/produk (1).jpg" alt="" width="100%" xoriginal="img/produk (1).jpg">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 d-flex d-md-block">
+                         <a href="img/produk (1).jpg">
+                              <img class="xzoom-gallery mt-1 p-1" src=" img/produk (1).jpg" alt="" width="100%">
+                         </a>
+                         <a href="img/produk (2).jpg">
+                              <img class="xzoom-gallery mt-1 p-1" src="img/produk (2).jpg" alt="" width="100%">
+                         </a>
+                         <a href="img/produk (3).jpg">
+                              <img class="xzoom-gallery mt-1 p-1" src="img/produk (3).jpg" alt="" width="100%">
+                         </a>
+                         <a href="img/produk (4).jpg">
+                              <img class="xzoom-gallery mt-1 p-1" src="img/produk (4).jpg" alt="" width="100%">
+                         </a>
+                    </div>
+               </div>
+          </section>
+
+          <section id="details">
+               <div class="row">
+                    <div class="col-7 details">
+                         <h5>Sofa Enak</h5>
+                         <p class="text-muted"> By Iqbal</p>
+                         <p class="harga">$1,450</p>
+
+                    </div>
+                    <div class="col-5">
+                         <button class="btn btn-success">Add To Cart</button>
+                    </div>
+               </div>
+
+               <div class="col-lg-7 detail">
+                    <p>
+                         The Nike Air Max 720 SE goes bigger than ever before with Nike's tallest Air unit yet for
+                         unimaginable, all-day comfort.
+                         There's super breathable fabrics on the upper, while colours add a modern edge.
+                         <br><br>
+                         Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA
+                         of the iconic Air Max 90.
+                         Brand-new Nike Air cushioning underfoot adds unparalleled comfort while transparent mesh
+                         and vibrantly coloured details
+                         on the upper are blended with timeless OG features for an edgy, modernised look.
+                    </p>
+                    <h4> Customer Review(3)</h4>
+                    <div class="row review">
+                         <div class="pic-profile d-flex">
+                              <a href=""><img src="img/User.png" alt="" srcset=""></a>
+                              <a href="">
+                                   <h3>Iqbal Faris Akbar</h3>
+                              </a>
+                         </div>
+                         <div class="col-lg-10 ">
+
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, doloribus praesentium
+                                   id hic molestiae harum unde possimus repudiandae aperiam nesciunt fugiat delectus?
+                                   In, saepe rem.
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                   <br>
+                              </p>
+                         </div>
+
+                    </div>
+
+
+          </section>
+
+     </div>
+
+
+
+
+
+     <!-- Script -->
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <script src="js/retina.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/xzoom.min.js"></script>
+     <script type="text/javascript">
+          $(document).ready(function () {
+               $('.xzoom, .xzoom-gallery').xzoom({
+                    zoomWidth: 300,
+                    title: false,
+                    tint: '#333',
+                    Xoffset: 12,
+                    fadeOut: true,
+                    mposition: 'inside'
+               });
+          });
+     </script>
+
+</body>
+
+</html>
