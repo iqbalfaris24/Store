@@ -1,3 +1,7 @@
+# Hasil proses pembelajaran 
+
+lisensi sepenuhnya milik BWA
+
 # Lisensi dan Penggunaan
 
 Source Code, Dokumentasi, dan Video Tutorial dilindungi oleh lisensi yang berbeda.
