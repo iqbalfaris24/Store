@@ -1,0 +1,26 @@
+.Categories {
+   border-radius: 8px;
+   text-align: center;
+   background-color: #f4f4f4;
+   padding: 20px;
+   :hover {
+      margin-top: -10px;
+      background-color: #e4e4e4;
+   }
+}
+
+.carousel-inner {
+   border-radius: 8px;
+}
+
+.card {
+   border: none;
+}
+
+a:hover .card {
+   margin-top: -10px;
+}
+
+#N-Products {
+   margin-bottom: 100px;
+}

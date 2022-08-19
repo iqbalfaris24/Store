@@ -1,0 +1,14 @@
+#sitemap {
+   margin-top: 80px;
+   font-size: 14px;
+   line-height: 24px;
+   .breadcrumb {
+      li a {
+         color: #979797;
+      }
+      .active {
+         color: #0c0d36;
+         font-weight: 500;
+      }
+   }
+}
