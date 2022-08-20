@@ -38,6 +38,18 @@ h6 {
 .harga {
    color: #ff7158;
 }
+#Jumbotron,
+#SignUp,
+#SignIn {
+   margin-top: 100px;
+}
+
+.form-control,
+.form-select {
+   background-color: #f3f3f3;
+   border: none;
+}
+
 footer {
    margin-top: 100px;
    display: flex;
@@ -48,8 +60,4 @@ footer {
 
 footer p {
    margin: auto;
-}
-
-#Jumbotron {
-   margin-top: 100px;
 }
