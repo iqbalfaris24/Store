@@ -1,0 +1,44 @@
+.navbar {
+   .pagestag {
+      background-color: aqua;
+      margin-left: 0;
+      h6 {
+         margin: 0;
+      }
+      h2 {
+         margin: 0;
+         font-weight: 400;
+      }
+   }
+}
+
+.sidebar {
+   position: fixed !important;
+   margin-left: -240px;
+   height: 100% !important;
+   padding: 6px 14px;
+   transition: all 0.3s ease;
+   ul {
+      li {
+         position: relative !important;
+         height: 50px;
+         width: 100% !important;
+         margin: 0 5px;
+         line-height: 50px;
+         a {
+            display: flex !important;
+         }
+      }
+   }
+}
+.content {
+   background-color: #e5e5e5;
+   transition: all 0.3s ease;
+}
+.sidebar.active {
+   width: 240px;
+   margin-left: 0px;
+}
+.sidebar.active ~ .content {
+   margin-left: 240px;
+}

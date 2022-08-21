@@ -52,17 +52,23 @@ h6 {
    background-color: #f3f3f3;
    border: none;
 }
+.navbar-toggler {
+   border: none;
+}
 
 textarea:hover,
 input:hover,
 select:hover,
+button:hover,
 textarea:active,
 input:active,
 select:active,
+button:active,
 textarea:focus,
 input:focus,
 select:focus,
 label:focus,
+button:focus,
 .btn:active,
 .btn.active {
    background-color: #f3f3f3 !important;

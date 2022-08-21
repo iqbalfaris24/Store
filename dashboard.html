@@ -12,8 +12,86 @@
 </head>
 
 <body>
+   <nav class="navbar">
+      <button id="btn-side" class="navbar-toggler" type="button">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="pagestag">
+         <h2>Dashboard</h2>
+         <h6 class="text-muted">Look what you have made today!</h6>
+      </div>
+      <ul>
+         <li class=" nav-item user">
+            <a href="">
+               <img class="pic-profile" src="img/User.png" alt="" srcset="">
+               Hi, Iqbal
+            </a>
+         </li>
+         <li class="nav-item">
+            <a href="">
+               <img src="img/shop.png" alt="">
+            </a>
+         </li>
+      </ul>
+   </nav>
+   <div class="sidebar">
+      <ul class="SideNavList">
+         <li>
+            <a href="">
+               <h3>Dashboard</h3>
+            </a>
+         </li>
+         <li>
+            <a href="">
+               <h3>My Products</h3>
+            </a>
+         </li>
+         <li>
+            <a href="">
+               <h3>Transaction</h3>
+            </a>
+         </li>
+         <li>
+            <a href="">
+               <h3>Store Settings</h3>
+            </a>
+         </li>
+         <li>
+            <a href="">
+               <h3>My Account</h3>
+            </a>
+         </li>
+      </ul>
+   </div>
+   <section class="content">
+      <div class="container">
+         <h2>Halo</h2>
+      </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--  -->
    <script src="libraries/bootstrap.min.js"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
+   <script>
+      let btnSide = document.getElementById('btn-side');
+      let sidebar = document.querySelector('.sidebar');
+
+      btnSide.addEventListener('click', function () {
+         sidebar.classList.toggle('active');
+      });
+   </script>
 </body>
 
 </html>
