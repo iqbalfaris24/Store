@@ -1,13 +1,13 @@
 @import "../../../libraries/scss/bootstrap.scss";
 
 .navbar {
-   @include media-breakpoint-down(md) {
-      background-color: aqua;
+   .container {
+      @include media-breakpoint-down(md) {
+         max-width: 767px;
+      }
    }
-   background-color: blue;
+
    .pagestag {
-      background-color: aqua;
-      width: auto !important;
       h3 {
          margin: 0;
       }
@@ -17,16 +17,15 @@
       }
    }
    .profile {
-      background-color: aquamarine;
       width: auto !important;
-
+      @include media-breakpoint-down(sm) {
+         display: none;
+      }
       ul {
          margin: auto 0;
          display: flex;
          align-items: center;
          li {
-            display: none;
-            background-color: red;
             margin-right: 10px;
          }
       }
@@ -37,17 +36,32 @@
    position: fixed !important;
    margin-left: -240px;
    height: 100% !important;
-   padding: 6px 14px;
    transition: all 0.3s ease;
    ul {
       li {
+         img {
+            align-items: center;
+         }
+         margin: 34px 0;
          position: relative !important;
-         height: 50px;
+         height: 38px;
          width: 100% !important;
-         margin: 0 5px;
-         line-height: 50px;
          a {
+            align-items: center;
+            height: 38px;
             display: flex !important;
+         }
+         a:hover {
+            h6 {
+               color: #0c0d36;
+               font-weight: 500;
+            }
+
+            border-right: 5px solid #ff7158;
+            background: #ffffff;
+            background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 16%, #ff7158bb 100%);
+            background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 16%, #ff7158bb 100%);
+            background: linear-gradient(to right, #ffffff 0%, #ffffff 16%, #ff7158bb 100%);
          }
       }
    }
@@ -58,8 +72,8 @@
 }
 .sidebar.active {
    width: 240px;
-   margin-left: 0px;
+   margin-left: -20px;
 }
 .sidebar.active ~ .content {
-   margin-left: 240px;
+   margin-left: 220px;
 }

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-@import "../../../libraries/css/bootstrap-utilities";
 
 body {
    font-family: "Poppins", sans-serif;
@@ -60,22 +59,26 @@ h6 {
 textarea:hover,
 input:hover,
 select:hover,
-button:hover,
 textarea:active,
 input:active,
 select:active,
-button:active,
 textarea:focus,
 input:focus,
 select:focus,
 label:focus,
-button:focus,
 .btn:active,
 .btn.active {
    background-color: #f3f3f3 !important;
    box-shadow: none !important;
    outline: 0px !important;
    -webkit-appearance: none;
+}
+
+button:hover,
+button:active,
+button:focus {
+   box-shadow: none !important;
+   outline: 0px !important;
 }
 footer {
    margin-top: 100px;

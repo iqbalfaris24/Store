@@ -5,24 +5,24 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/admin.min.css">
 
    <title>Dashboard</title>
 </head>
 
 <body>
-   <nav class="navbar justify-content-start d-flex">
-      <button id="btn-side" class="navbar-toggler" type="button">
-         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container">
-         <div class="pagestag">
+   <nav class="navbar">
+      <div class="container justify-content-start">
+         <button id="btn-side" class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="pagestag p-2">
             <h3>Dashboard</h3>
             <h6 class="text-muted">Look what you have made today!</h6>
          </div>
-         <div class="profile float-end">
-            <ul>
+         <div class="profile ms-auto p-2" id="navbarNav">
+            <ul class="justify-content-between">
                <li class=" nav-item user ">
                   <a href="">
                      <img class="pic-profile" src="img/User.png" alt="" srcset="">
@@ -40,29 +40,32 @@
    </nav>
    <div class="sidebar">
       <ul class="SideNavList">
+         <li class="text-center">
+            <img src="img/logo.svg" alt="">
+         </li>
          <li>
             <a href="">
-               <h5>Dashboard</h5>
+               <h6>Dashboard</h6>
             </a>
          </li>
          <li>
             <a href="">
-               <h5>My Products</h5>
+               <h6 class="text-muted">My Products</h6 class="text-muted">
             </a>
          </li>
          <li>
             <a href="">
-               <h5>Transaction</h5>
+               <h6 class="text-muted">Transaction</h6 class="text-muted">
             </a>
          </li>
          <li>
             <a href="">
-               <h5>Store Settings</h5>
+               <h6 class="text-muted">Store Settings</h6 class="text-muted">
             </a>
          </li>
          <li>
             <a href="">
-               <h5>My Account</h5>
+               <h6 class="text-muted">My Account</h6 class="text-muted">
             </a>
          </li>
       </ul>
