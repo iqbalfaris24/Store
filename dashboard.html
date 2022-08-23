@@ -12,37 +12,12 @@
 </head>
 
 <body>
-   <nav class="navbar">
-      <div class="container justify-content-start">
-         <button id="btn-side" class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="pagestag p-2">
-            <h3>Dashboard</h3>
-            <h6 class="text-muted">Look what you have made today!</h6>
-         </div>
-         <div class="profile ms-auto p-2" id="navbarNav">
-            <ul class="justify-content-between">
-               <li class=" nav-item user ">
-                  <a href="">
-                     <img class="pic-profile" src="img/User.png" alt="" srcset="">
-                     Hi, Iqbal
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a href="">
-                     <img src="img/shop.png" alt="">
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </nav>
+
    <div class="sidebar">
       <ul class="SideNavList">
-         <li class="text-center">
-            <img src="img/logo.svg" alt="">
-         </li>
+         <div class="brand-header d-flex m-5">
+            <img src="img/logo-dashboard.svg" alt="">
+         </div>
          <li>
             <a href="">
                <h6>Dashboard</h6>
@@ -50,29 +25,145 @@
          </li>
          <li>
             <a href="">
-               <h6 class="text-muted">My Products</h6 class="text-muted">
+               <h6 class="text-muted">My Products</h6>
             </a>
          </li>
          <li>
             <a href="">
-               <h6 class="text-muted">Transaction</h6 class="text-muted">
+               <h6 class="text-muted">Transaction</h6>
             </a>
          </li>
          <li>
             <a href="">
-               <h6 class="text-muted">Store Settings</h6 class="text-muted">
+               <h6 class="text-muted">Store Settings</h6>
             </a>
          </li>
          <li>
             <a href="">
-               <h6 class="text-muted">My Account</h6 class="text-muted">
+               <h6 class="text-muted">My Account</h6>
             </a>
          </li>
       </ul>
    </div>
    <section class="content">
+      <nav class="navbar">
+         <div class="container justify-content-start">
+            <button id="btn-side" class="navbar-toggler" type="button">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="pagestag p-2">
+               <h3>Dashboard</h3>
+               <h6 class="text-muted">Look what you have made today!</h6>
+            </div>
+            <div class="profile ms-auto p-2" id="navbarNav">
+               <ul class="justify-content-between">
+                  <li class=" nav-item user  me-3">
+                     <a href="" class="d-flex">
+                        <img class="pic-profile" src="img/User.png" alt="" srcset="">
+                        <h6 class="my-auto ms-2">Hi, Iqbal</h6>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="">
+                        <img src="img/shop.png" alt="">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
       <div class="container">
-         <h2>Halo</h2>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="card mb-2 b-card">
+                  <div class="card-body">
+                     <h6 class="text-muted">Customer</h6>
+                     <h1>15,209</h1>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-2 b-card">
+                  <div class="card-body">
+                     <h6 class="text-muted">Revenue</h6>
+                     <h1>$931,290</h1>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-2 b-card">
+                  <div class="card-body">
+                     <h6 class="text-muted">Transaction</h6>
+                     <h1>22,409,399</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <h5>Recent Transaction</h5>
+         <a href="" class="card card-list mb-3 b-card">
+            <div class="card-body">
+               <div class="row">
+                  <div class="col-2 col-md-1 my-auto">
+                     <img src="img/image.png" alt="" srcset="">
+                  </div>
+                  <div class="col-2 col-md-4 my-auto">
+                     gelas
+                  </div>
+                  <div class="col-4 col-md-3 my-auto">
+                     Iqbal Faris Akbar
+                  </div>
+                  <div class="col-4 col-md-3 my-auto">
+                     24/05/2020
+                  </div>
+                  <div class=" d-none col-md-1 d-md-block my-auto">
+                     <img src="img/expand_more_24px.png" alt="" srcset="">
+                  </div>
+               </div>
+            </div>
+         </a>
+         <a href="" class="card card-list mb-3 b-card">
+            <div class="card-body ">
+               <div class="row">
+                  <div class="col-2 col-md-1 my-auto">
+                     <img src="img/image-1.png" alt="" srcset="">
+                  </div>
+                  <div class="col-2 col-md-4 my-auto">
+                     bangku kayu
+                  </div>
+                  <div class="col-4 col-md-3 my-auto">
+                     Iqbal Faris Akbar
+                  </div>
+                  <div class="col-4 col-md-3 my-auto">
+                     24/05/2021
+                  </div>
+                  <div class=" d-none col-md-1 d-md-block my-auto">
+                     <img src="img/expand_more_24px.png" alt="" srcset="">
+                  </div>
+               </div>
+            </div>
+         </a>
+         <a href="" class="card card-list mb-3 b-card">
+            <div class="card-body">
+               <div class="row">
+                  <div class="col-2 col-md-1 my-auto">
+                     <img src="img/image-2.png" alt="" srcset="">
+                  </div>
+                  <div class="col-2 col-md-4 my-auto">
+                     bangku
+                  </div>
+                  <div class="col-4 col-md-3 my-auto">
+                     Iqbal Faris Akbar
+                  </div>
+                  <div class="col-4 col-md-3 my-auto">
+                     24/05/2022
+                  </div>
+                  <div class=" d-none col-md-1 d-md-block my-auto">
+                     <img src="img/expand_more_24px.png" alt="" srcset="">
+                  </div>
+               </div>
+            </div>
+         </a>
+
       </div>
    </section>
 
