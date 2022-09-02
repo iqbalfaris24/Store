@@ -1,4 +1,4 @@
-@import "../../../libraries/scss/bootstrap.scss";
+@import "../../../libraries/bootstrap/scss/bootstrap.scss";
 
 .navbar {
    .container {
@@ -42,6 +42,8 @@
    margin-left: -240px;
    height: 100% !important;
    transition: all 0.3s ease;
+   z-index: 99;
+   background: #fff;
 
    ul {
       li {
@@ -75,14 +77,19 @@
 .content {
    background-color: #e5e5e5;
    transition: all 0.3s ease;
+   position: relative;
 }
 
 .sidebar.active {
    width: 240px;
    margin-left: -20px;
-   z-index: 1;
 }
 
 .sidebar.active~.content {
    margin-left: 220px;
+
+   @include media-breakpoint-down(sm) {
+      margin-left: 0;
+   }
+
 }

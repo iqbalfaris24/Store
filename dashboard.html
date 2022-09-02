@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/admin.min.css">
 
    <title>Dashboard</title>
@@ -13,8 +13,10 @@
 
 <body>
 
-   <div class="sidebar">
+   <div class="offcanvas-sm offcanvas-start sidebar" id="sidebar">
+
       <ul class="SideNavList">
+
          <div class="brand-header d-flex m-5">
             <a href="index.html"><img src="img/logo-dashboard.svg" alt=""></a>
          </div>
@@ -189,12 +191,16 @@
    <script src="libraries/bootstrap.min.js"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
    <script>
-      let btnSide = document.getElementById('btn-side');
-      let sidebar = document.querySelector('.sidebar');
+      const btnSide = document.getElementById('btn-side');
+      const sidebar = document.getElementById('sidebar');
 
-      btnSide.addEventListener('click', function () {
+      btnSide.onclick = function () {
          sidebar.classList.toggle('active');
-      });
+      }
+
+      // btnSide.addEventListener('click', function () {
+      //    sidebar.classList.toggle('active');
+      // });
    </script>
 </body>
 
