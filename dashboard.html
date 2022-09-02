@@ -13,7 +13,7 @@
 
 <body>
 
-   <div class="offcanvas-sm offcanvas-start sidebar" id="sidebar">
+   <div class="sidebar">
 
       <ul class="SideNavList">
 
@@ -21,12 +21,13 @@
             <a href="index.html"><img src="img/logo-dashboard.svg" alt=""></a>
          </div>
          <li>
+
             <a href="dashboard.html">
                <h6>Dashboard</h6>
             </a>
          </li>
          <li>
-            <a href="myproducts.html">
+            <a href="">
                <h6 class="text-muted">My Products</h6>
             </a>
          </li>
@@ -191,16 +192,12 @@
    <script src="libraries/bootstrap.min.js"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
    <script>
-      const btnSide = document.getElementById('btn-side');
-      const sidebar = document.getElementById('sidebar');
+      let btnSide = document.getElementById('btn-side');
+      let sidebar = document.querySelector('.sidebar');
 
-      btnSide.onclick = function () {
+      btnSide.addEventListener('click', function () {
          sidebar.classList.toggle('active');
-      }
-
-      // btnSide.addEventListener('click', function () {
-      //    sidebar.classList.toggle('active');
-      // });
+      });
    </script>
 </body>
 

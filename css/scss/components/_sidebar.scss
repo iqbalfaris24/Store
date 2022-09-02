@@ -39,6 +39,7 @@
 
 .sidebar {
    position: fixed !important;
+   width: 240px;
    margin-left: -240px;
    height: 100% !important;
    transition: all 0.3s ease;
@@ -77,19 +78,24 @@
 .content {
    background-color: #e5e5e5;
    transition: all 0.3s ease;
-   position: relative;
 }
 
 .sidebar.active {
-   width: 240px;
-   margin-left: -20px;
+   margin-left: 0px;
 }
 
 .sidebar.active~.content {
    margin-left: 220px;
 
-   @include media-breakpoint-down(sm) {
-      margin-left: 0;
-   }
+   @include media-breakpoint-down(md) {
+      margin-left: 240px;
+      width: 100%;
 
+   }
+}
+
+@include media-breakpoint-down(lg) {
+   body {
+      overflow-x: hidden;
+   }
 }
