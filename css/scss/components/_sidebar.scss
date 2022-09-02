@@ -78,6 +78,10 @@
 .content {
    background-color: #e5e5e5;
    transition: all 0.3s ease;
+
+   @include media-breakpoint-down(md) {
+      width: 100%;
+   }
 }
 
 .sidebar.active {
@@ -85,12 +89,10 @@
 }
 
 .sidebar.active~.content {
-   margin-left: 220px;
+   margin-left: 240px;
 
    @include media-breakpoint-down(md) {
       margin-left: 240px;
-      width: 100%;
-
    }
 }
 
