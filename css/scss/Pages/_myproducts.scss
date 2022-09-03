@@ -5,8 +5,10 @@
    }
 
    .card-list {
-
       .card {
+         &:hover {
+            background-color: #e4e4e4;
+         }
 
          margin-top: 20px;
 

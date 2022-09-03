@@ -1,0 +1,13 @@
+.card-list {
+   a {
+      .card {
+         padding: 5px;
+         border: none;
+         margin-top: 20px;
+
+         &:hover {
+            background-color: #e4e4e4;
+         }
+      }
+   }
+}
