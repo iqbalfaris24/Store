@@ -1,11 +1,18 @@
 .btn {
    width: 100%;
+   border: none;
 }
+
+.btn-success {
+   background: #29A867;
+}
+
 .btn-back {
    background-color: #f3f3f3;
    color: #bbbbbb;
    border: none;
 }
+
 .btn-back:hover {
    background-color: #e9e6e6;
    color: #bbbbbb;
