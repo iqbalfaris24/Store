@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/admin.min.css">
-
+   <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
    <title>Dashboard</title>
 </head>
 
@@ -15,7 +15,6 @@
 
    <div class="sidebar">
       <ul class="SideNavList">
-
          <div class="brand-header d-flex m-5">
             <a href="index.html"><img src="img/logo-dashboard.svg" alt=""></a>
          </div>
@@ -29,17 +28,17 @@
                <h6>My Products</h6>
             </a>
          </li>
-         <li class="nav-item">
+         <li class="nav-item ">
             <a class="nav-link" href="transactions.html">
                <h6>Transaction</h6>
             </a>
          </li>
-         <li class="nav-item">
+         <li class="nav-item ">
             <a class="nav-link" href="StoreSettings.html">
                <h6>Store Settings</h6>
             </a>
          </li>
-         <li class="nav-item">
+         <li class="nav-item ">
             <a class="nav-link" href="MyAccounts.html">
                <h6>My Account</h6>
             </a>
@@ -54,8 +53,8 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="pagestag p-2">
-               <h3>My Products</h3>
-               <h6 class="text-muted">Manage it well and get money</h6>
+               <h3>Create New Product</h3>
+               <h6 class="text-muted">Create your own product</h6>
             </div>
             <div class="profile ms-auto p-2" id="navbarNav">
                <ul class="justify-content-between">
@@ -75,68 +74,36 @@
          </div>
       </nav>
 
-      <div class="container MyProducts">
-
-         <a href="products-create.html"><button class="btn btn-success">Add New Product</button></a>
-         <div class="card-list">
+      <div class="container MyAccounts">
+         <form class="px-4 py-3 ">
             <div class="row">
-               <div class="col-md-3 col-sm-4 col-6 ">
-                  <a href="">
-                     <div class="card ">
-                        <img src="img/image 10.png" alt="">
-                        <div class="card-body">
-                           <h5 class="card-title">Shirup Marzzan</h5>
-                           <p class="text-muted">Halo</p>
-                        </div>
-                     </div>
-                  </a>
+               <div class="col-md-6 mb-5">
+                  <label for="ProductName" class="form-label">Product Name</label>
+                  <input type="text" class="form-control" id="ProductName">
                </div>
-               <div class="col-md-3 col-sm-4 col-6 ">
-                  <a href="">
-                     <div class="card ">
-                        <img src="img/image 10.png" alt="">
-                        <div class="card-body">
-                           <h5 class="card-title">Product Name</h5>
-                           <p class="text-muted">Halo</p>
-                        </div>
-                     </div>
-                  </a>
+               <div class="col-md-6 mb-5">
+                  <label for="Price" class="form-label">Price</label>
+                  <input type="email" class="form-control" id="Price">
                </div>
-               <div class="col-md-3 col-sm-4 col-6">
-                  <a href="">
-                     <div class="card ">
-                        <img src="img/produk (1).jpg" alt="">
-                        <div class="card-body">
-                           <h5 class="card-title">Product Name</h5>
-                           <p class="text-muted">Halo</p>
-                        </div>
-                     </div>
-                  </a>
+               <div class="col-12 mb-5">
+                  <label for="Category" class="form-label">Category</label>
+                  <select class="form-select" aria-label="Category">
+                     <option selected>Furniture</option>
+                     <option value="1">one</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
                </div>
-               <div class="col-md-3 col-sm-4 col-6">
-                  <a href="">
-                     <div class="card ">
-                        <img src="img/produk (2).jpg" alt="">
-                        <div class="card-body">
-                           <h5 class="card-title">Product Name</h5>
-                           <p class="text-muted">Halo</p>
-                        </div>
-                     </div>
-                  </a>
+               <div class="col-12 mb-5">
+                  <label for="Description" class="form-label">Description</label>
+                  <textarea class="form-control" id="floatingTextarea"></textarea>
                </div>
-               <div class="col-md-3 col-sm-4 col-6">
-                  <a href="">
-                     <div class="card ">
-                        <img src="img/produk (3).jpg" alt="">
-                        <div class="card-body">
-                           <h5 class="card-title">Product Name</h5>
-                           <p class="text-muted">Halo</p>
-                        </div>
-                     </div>
-                  </a>
+               <div class="d-grid justify-content-md-end">
+                  <button class="btn btn-success me-md-2" type="button">Save Now</button>
                </div>
             </div>
-         </div>
+
+         </form>
 
       </div>
    </section>
@@ -156,6 +123,13 @@
    <!--  -->
    <script src="libraries/bootstrap/bootstrap.min.js"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
+   <script>
+      ClassicEditor
+         .create(document.querySelector('#floatingTextarea'))
+         .catch(error => {
+            console.error(error);
+         });
+   </script>
    <script>
       let btnSide = document.getElementById('btn-side');
       let sidebar = document.querySelector('.sidebar');
