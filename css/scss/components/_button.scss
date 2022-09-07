@@ -11,10 +11,28 @@
    background-color: #f3f3f3;
    color: #bbbbbb;
    border: none;
+
+   &:hover {
+      background-color: #e9e6e6;
+      color: #bbbbbb;
+      border: none;
+   }
 }
 
-.btn-back:hover {
-   background-color: #e9e6e6;
-   color: #bbbbbb;
-   border: none;
+.btn-add {
+   background: #BBBBBB;
+   border-radius: 6px;
+   color: #FFFFFF;
+
+   &:hover {
+      background-color: #a19f9f;
+      color: #FFFFFF;
+      border: none;
+   }
+
+   &:focus {
+      background-color: #a19f9f;
+      color: #FFFFFF;
+      border: none;
+   }
 }

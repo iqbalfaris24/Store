@@ -54,8 +54,8 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="pagestag p-2">
-               <h3>Create New Product</h3>
-               <h6 class="text-muted">Create your own product</h6>
+               <h3>Shirup Marzan</h3>
+               <h6 class="text-muted">Product Details</h6>
             </div>
             <div class="profile ms-auto p-2" id="navbarNav">
                <ul class="justify-content-between">
@@ -75,16 +75,17 @@
          </div>
       </nav>
 
-      <div class="container MyAccounts">
+      <div class="container">
          <form class="px-4 py-3 ">
             <div class="row">
                <div class="col-md-6 mb-5">
                   <label for="ProductName" class="form-label">Product Name</label>
-                  <input type="text" class="form-control" id="ProductName">
+                  <input type="text" class="form-control" id="ProductName" value="Papel La Casa">
+
                </div>
                <div class="col-md-6 mb-5">
                   <label for="Price" class="form-label">Price</label>
-                  <input type="email" class="form-control" id="Price">
+                  <input type="email" class="form-control" id="Price" value="$100.00">
                </div>
                <div class="col-12 mb-5">
                   <label for="Category" class="form-label">Category</label>
@@ -97,19 +98,46 @@
                </div>
                <div class="col-12 mb-5">
                   <label for="Description" class="form-label">Description</label>
-                  <textarea class="form-control" id="floatingTextarea"></textarea>
+                  <textarea class="form-control" id="floatingTextarea">The Nike Air Max 720 SE goes bigger than ever before with Nike's tallest Air unit yet for
+                  unimaginable, all-day comfort. There's super breathable fabrics on the upper, while
+                  colours add a modern edge. Bring the past into the future with the Nike Air Max 2090,
+                  a bold look inspired by the DNA of the iconic Air Max 90. Brand-new Nike Air cushioning</textarea>
                </div>
-               <div class="col-12 mb-5">
-                  <label class="form-label" for="inputGroupFile02">Thumbnails</label>
-                  <input type="file" class="form-control" id="inputGroupFile02">
-               </div>
-
-               <div class="d-grid justify-content-md-end">
-                  <button class="btn btn-success me-md-2" type="button">Save Now</button>
+               <div class="d-block">
+                  <button class="btn btn-success me-md-2" type="button">Update Product</button>
                </div>
             </div>
-
-         </form>
+            <div class="row my-5">
+               <div class="col-12">
+                  <div class="row CardThumbs">
+                     <div class="col-md-4">
+                        <div class="card">
+                           <img src="img/pic-1.jpg" alt="" srcset="" width="100%">
+                           <a href="#" class="Thumbs-Remove"><img src="img/Thumbs-Remove.svg" alt="" srcset=""></a>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="card">
+                           <img src="img/produk (1).jpg" alt="" srcset="" width="100%">
+                           <a href="#" class="Thumbs-Remove"><img src="img/Thumbs-Remove.svg" alt="" srcset=""></a>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="card">
+                           <img src="img/produk (1).jpg" alt="" srcset="" width="100%">
+                           <a href="#" class="Thumbs-Remove"><img src="img/Thumbs-Remove.svg" alt="" srcset=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="d-block mt-5">
+                  <input type="file" id="file" class="d-none" multiple>
+                  <button class="btn btn-add me-md-2" type="button" onclick="ThisUploadFile()">Add Photo</button>
+               </div>
+            </div>
+      </div>
+      </div>
+      </form>
 
       </div>
    </section>
@@ -145,6 +173,11 @@
       }
       btnClose.onclick = function () {
          sidebar.classList.toggle('active');
+      }
+   </script>
+   <script>
+      function ThisUploadFile() {
+         document.getElementById('file').click();
       }
    </script>
 </body>
