@@ -3,6 +3,11 @@
 body {
    font-family: "Poppins", sans-serif;
    color: #0c0d36;
+
+   &,
+   html {
+      overflow-x: hidden;
+   }
 }
 
 /* Chrome, Safari, Edge, Opera */
