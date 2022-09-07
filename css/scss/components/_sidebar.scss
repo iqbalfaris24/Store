@@ -51,6 +51,10 @@
    }
 
    .SideNavList {
+      .btn-close {
+         margin-top: 35px;
+      }
+
       .nav-item {
          margin: 34px 0;
          position: relative !important;
@@ -95,7 +99,6 @@
    transition: all 0.3s ease;
    margin-left: 280px;
    margin-right: 40px;
-   overflow-x: hidden !important;
 
    @include media-breakpoint-down(md) {
       width: 100%;
@@ -114,15 +117,8 @@
 .sidebar.active~.content {
    margin-left: 0px;
    margin-right: 0px;
-   overflow-x: hidden !important;
 
    @include media-breakpoint-down(md) {
       margin-left: 280px;
-   }
-}
-
-@include media-breakpoint-down(lg) {
-   body {
-      overflow-x: hidden !important;
    }
 }
