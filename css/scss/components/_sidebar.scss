@@ -114,6 +114,7 @@
 .sidebar.active~.content {
    margin-left: 0px;
    margin-right: 0px;
+   overflow-x: hidden;
 
    @include media-breakpoint-down(md) {
       margin-left: 280px;
