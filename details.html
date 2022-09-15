@@ -13,15 +13,13 @@
 
 <body>
      <div class="container">
-
           <nav class="navbar fixed-top navbar-expand-sm bg-light">
                <div class="container">
                     <a class="navbar-brand" href="/">
                          <img src="img/logo.svg" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                         style="border: none;">
+                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarNav">
@@ -35,12 +33,21 @@
                               <li class="nav-item">
                                    <a class="nav-link" href="#">Rewards</a>
                               </li>
-                              <li class="nav-item user">
-                                   <a href="">
-                                        <img class="pic-profile" src="img/User.png" alt="" srcset="">
-                                        Hi, Iqbal
-                                   </a>
-                              </li>
+                              <ul class="navbar-nav">
+                                   <li class="nav-item dropdown ">
+                                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" type="button"
+                                             data-bs-toggle="dropdown">
+                                             <img class="pic-profile" src="img/User.png" alt="" srcset="">
+                                             Hi, Iqbal
+                                        </a>
+                                        <div class="dropdown-menu">
+                                             <a href="dashboard.html" class="dropdown-item">Dashboard</a>
+                                             <a href="MyAccounts.html" class="dropdown-item">Settings</a>
+                                             <div class="dropdown-divider"></div>
+                                             <a href="/index.html" class="dropdown-item">Logout</a>
+                                        </div>
+                                   </li>
+                              </ul>
                               <li class="nav-item">
                                    <a href="">
                                         <img src="img/shop.png" alt="">
@@ -84,7 +91,7 @@
           </section>
 
           <section id="details">
-               <div class="row">
+               <div class="row mt-4">
                     <div class="col-7 col-md-5 details">
                          <h5>Sofa Enak</h5>
                          <p class="text-muted"> By Iqbal</p>
@@ -111,7 +118,7 @@
 
                </div>
 
-               <h4> Customer Review(3)</h4>
+               <h4>Customer Review(3)</h4>
                <div class="review">
                     <div class="row col-lg-7 col-md-7 col-sm-12">
                          <div class="d-flex mt-3">
@@ -163,7 +170,7 @@
      <!-- Script -->
      <script src="js/jquery-3.6.0.min.js"></script>
      <script src="js/retina.min.js"></script>
-     <script src="js/bootstrap/bootstrap/bootstrap.min.js"></script>
+     <script src="libraries/bootstrap/bootstrap.min.js"></script>
      <script src="js/xzoom.min.js"></script>
      <script type="text/javascript">
           $(document).ready(function () {
