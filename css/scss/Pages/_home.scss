@@ -9,7 +9,7 @@
       background-color: #e4e4e4;
    }
 
-   @include media-breakpoint-up(md) {
+   @include media-breakpoint-up(sm) {
       &:hover {
          margin-top: -10px;
          background-color: #e4e4e4;
