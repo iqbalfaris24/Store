@@ -3,11 +3,20 @@
    text-align: center;
    background-color: #f4f4f4;
    padding: 20px;
+   transition: all 0.3s ease;
 
    &:hover {
-      margin-top: -10px;
       background-color: #e4e4e4;
    }
+
+   @include media-breakpoint-up(md) {
+      &:hover {
+         margin-top: -10px;
+         background-color: #e4e4e4;
+         transition: all 0.3s ease;
+      }
+   }
+
 }
 
 .carousel-inner {
@@ -15,12 +24,17 @@
 }
 
 .card {
+   transition: all 0.3s ease;
    border: none;
 }
 
-a:hover .card {
-   margin-top: -10px;
+@include media-breakpoint-up(md) {
+   a:hover .card {
+      transition: all 0.3s ease;
+      margin-top: -10px;
+   }
 }
+
 
 #N-Products {
    margin-bottom: 100px;
